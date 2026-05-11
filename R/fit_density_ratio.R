@@ -1,12 +1,12 @@
 #' @name fit_density_ratio
 #' @title Fit density-ratio distribution models in a plug-and-play framework.
 #' @description This function fits density-ratio species distribution models for
-#' the specified density-ratio method \insertCite{Drake2018-ha}{S4DM}.
+#' the specified density-ratio method \insertCite{Drake2018-ha,Maitner2026-bc}{S4DM}.
 #' @param presence dataframe of covariates at presence points
 #' @param background Dataframe of covariates at background points
 #' @param method Character. See "notes" for options.
 #' @param ... Additional parameters passed to internal functions.
-#' @details Current methods include: "ulsif", "rulsif", "maxnet"
+#' @details Current methods include: "ulsif", "rulsif", "kliep", "maxnet"
 #' @return List of class "dr_model" containing model objects and metadata needed for projecting the fitted models.
 #' @export
 #' @importFrom Rdpack reprompt
